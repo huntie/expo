@@ -136,6 +136,8 @@ export function getDefaultConfig(
         .filter((assetExt) => !sourceExts.includes(assetExt)),
       sourceExts,
       nodeModulesPaths,
+      // @ts-expect-error: unstable_conditionNames is not on type
+      unstable_conditionNames: ['import', 'require', 'react-native'],
     },
     serializer: {
       getModulesRunBeforeMainModule: () => [
