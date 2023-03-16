@@ -11,8 +11,9 @@ import {
 } from '@expo/dev-server/build/metro/importMetroFromProject';
 import { LoadOptions } from '@expo/metro-config';
 import chalk from 'chalk';
-import Metro from 'metro';
+import { AssetData } from 'metro';
 import { Terminal } from 'metro-core';
+import { BundleOptions as MetroBundleOptions } from 'metro/shared/types';
 
 import { MetroTerminalReporter } from '../start/server/metro/MetroTerminalReporter';
 import { withMetroMultiPlatformAsync } from '../start/server/metro/withMetroMultiPlatform';
@@ -31,7 +32,7 @@ export type BundleOptions = {
   minify?: boolean;
   sourceMapUrl?: string;
 };
-export type BundleAssetWithFileHashes = Metro.AssetData & {
+export type BundleAssetWithFileHashes = AssetData & {
   fileHashes: string[]; // added by the hashAssets asset plugin
 };
 export type BundleOutput = {
@@ -122,7 +123,7 @@ export async function bundleAsync(
   const buildAsync = async (bundle: BundleOptions): Promise<BundleOutput> => {
     const buildID = `bundle_${nextBuildID++}_${bundle.platform}`;
     const isHermes = isEnableHermesManaged(expoConfig, bundle.platform);
-    const bundleOptions: Metro.BundleOptions = {
+    const bundleOptions: MetroBundleOptions = {
       ...Server.DEFAULT_BUNDLE_OPTIONS,
       bundleType: 'bundle',
       platform: bundle.platform,
@@ -150,7 +151,6 @@ export async function bundleAsync(
     terminalReporter.update({
       buildID,
       type: 'bundle_build_started',
-      // @ts-expect-error: TODO
       bundleDetails,
     });
     try {

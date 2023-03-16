@@ -3877,10 +3877,12 @@
   resolved "https://registry.yarnpkg.com/@types/long/-/long-4.0.2.tgz#b74129719fc8d11c01868010082d483b7545591a"
   integrity sha512-MqTGEo5bj5t157U6fA/BiDynNkn0YknVdh48CMPkTSpFTVmvao5UQmm7uEF6xBEo7qIMAlY/JSleYaE6VOdpaA==
 
-"@types/metro-babel-transformer@*":
-  version "0.66.0"
-  resolved "https://registry.yarnpkg.com/@types/metro-babel-transformer/-/metro-babel-transformer-0.66.0.tgz#54eb259038e699d27ed72cd69856a84fc31d4380"
-  integrity sha512-EMp16oxuhMJWuZ0p+/7Fz/hRxlTfiMr6LPctHQnIDhUFVuWcIYmDL9segxIp5vQXWE6kopjOlAnm84o4toWojg==
+"@types/metro-babel-transformer@*", "@types/metro-babel-transformer@~0.76.0":
+  version "0.76.0"
+  resolved "https://registry.yarnpkg.com/@types/metro-babel-transformer/-/metro-babel-transformer-0.76.0.tgz#59ecb66e4168db5fbe712c0636eefdeee4ffde95"
+  integrity sha512-ctZPAeNrR9HOvH968gCMPa2YAFDkGhqhoceYlXB+Tp/eQu/crzUR3I7j9UKv8t9enuvd5OWLAQm3hJz+QCtPZg==
+  dependencies:
+    "@types/metro-source-map" "*"
 
 "@types/metro-cache@*":
   version "0.66.0"
@@ -3889,33 +3891,39 @@
   dependencies:
     "@types/node" "*"
 
-"@types/metro-config@*":
-  version "0.66.0"
-  resolved "https://registry.yarnpkg.com/@types/metro-config/-/metro-config-0.66.0.tgz#91cd115773227d56bd79fde3025feaf30ba33f21"
-  integrity sha512-2H52IsyIXwQvakfjxV1sRDGtq25m8C7Rtf1lSVVFeM54KKeKZRThqJj5c/HoVvAVCswneogyyWmjv9Gn1JUqaw==
+"@types/metro-config@*", "@types/metro-config@~0.76.1":
+  version "0.76.2"
+  resolved "https://registry.yarnpkg.com/@types/metro-config/-/metro-config-0.76.2.tgz#98c4cb83cf62afc6af8f833285ef4266df79084b"
+  integrity sha512-oxV5sbFCCW0CF1hLKu62/h3OQRar9IdpKxNEkoy6A590eiNC0e4Cwl3S/ZQMeiwxVljGt1/jX++OL0ohof1oAA==
   dependencies:
     "@types/metro" "*"
     "@types/metro-cache" "*"
     "@types/metro-resolver" "*"
-    "@types/metro-source-map" "*"
     "@types/metro-transform-worker" "*"
 
-"@types/metro-core@*", "@types/metro-core@~0.66.0":
-  version "0.66.0"
-  resolved "https://registry.yarnpkg.com/@types/metro-core/-/metro-core-0.66.0.tgz#35477ebccfdc4a94080fde3a22c89f053ec2365d"
-  integrity sha512-bTlWh1gf2DqLtcA3XnJgR4h4UO65uFhKWPF1XikudeUMAvVh0Hv2uDAdinP1kRhWFSccmYsa74dr1CVZNXDiqA==
+"@types/metro-core@*", "@types/metro-core@~0.76.0":
+  version "0.76.0"
+  resolved "https://registry.yarnpkg.com/@types/metro-core/-/metro-core-0.76.0.tgz#ce9f425abd48431681922ac4f13a3efc9fd1d0e3"
+  integrity sha512-7iBXd1CiBNHVBPrVbjG2xy8KJq1l6aohQftyqH89FZL/h1cwxxgxt3QtdeYGN7ATOgqAl7iI3BkRd2th4diBvA==
   dependencies:
     "@types/node" "*"
+
+"@types/metro-file-map@*":
+  version "0.76.0"
+  resolved "https://registry.yarnpkg.com/@types/metro-file-map/-/metro-file-map-0.76.0.tgz#feb5573c57ee5c7d53268c1bf69c00f1c3bfccde"
+  integrity sha512-61sPxJZG5zEn/8grZfapDOBN517Z4ejHjXrcnMkudBxLrtCxLOcC495JRIfEn7mvV776Z488mNYGMfoPApht2A==
+  dependencies:
+    "@types/metro-config" "*"
 
 "@types/metro-resolver@*":
   version "0.66.0"
   resolved "https://registry.yarnpkg.com/@types/metro-resolver/-/metro-resolver-0.66.0.tgz#3d3c59c8d4068f4e0429db912bad6d774709fc52"
   integrity sha512-a97Su7R7XoKuEuhMSeAqddfeb6QygRwXYjHDHKtGoIF4IkXt5FAjW5Vf+oJTpzgPIptRpViuLYre89pzudC/+g==
 
-"@types/metro-source-map@*":
-  version "0.66.0"
-  resolved "https://registry.yarnpkg.com/@types/metro-source-map/-/metro-source-map-0.66.0.tgz#32286858a5d7e266e73d5abed7c4e3b33b6626bd"
-  integrity sha512-lzZDCemXrM7XfS1D3Zmb6mOdevfk8jZ/433gqkbkTmY9IivKzr+KyXG39MSrOdF3QTXwu2J9qAfLr26pTxPcUQ==
+"@types/metro-source-map@*", "@types/metro-source-map@~0.76.0":
+  version "0.76.0"
+  resolved "https://registry.yarnpkg.com/@types/metro-source-map/-/metro-source-map-0.76.0.tgz#c3b4bdd7c401b890165cf3274ffa3acc839cf191"
+  integrity sha512-nxx7MjnQJKzftTMDp6voMqdHjy4rL0gHeJHG2LYLcqdl9gs3sxeoAC1wx39SoeSYgsadWUvnj7GrJWMhP4oGvg==
 
 "@types/metro-transform-worker@*":
   version "0.66.0"
@@ -3926,17 +3934,21 @@
     "@types/metro-babel-transformer" "*"
     "@types/metro-source-map" "*"
 
-"@types/metro@*", "@types/metro@~0.66.1":
-  version "0.66.1"
-  resolved "https://registry.yarnpkg.com/@types/metro/-/metro-0.66.1.tgz#f619bc21ff2a459eff2222ca13a58693dd0ebfe3"
-  integrity sha512-dwmII5ifXDuBDT3w7fWYKLT/TPsVcU3I8ydj3uoLmUFNTpsc3H+2I6ovDIiQKlx/GI1mE4LswzLo/zkqMFu5AQ==
+"@types/metro@*", "@types/metro@~0.76.0":
+  version "0.76.0"
+  resolved "https://registry.yarnpkg.com/@types/metro/-/metro-0.76.0.tgz#fe6eadcab1444b3a0398aa1a9a87d09643d37879"
+  integrity sha512-3WIyw3e0QxF7XBvFuQIpBqui/7lYtFE8xpFIMKY+i+U9ERdbktBOEGXcN6gqG56BHq89502Ts5fxpOSrLEH3fQ==
   dependencies:
     "@types/babel__code-frame" "*"
     "@types/metro-babel-transformer" "*"
     "@types/metro-config" "*"
     "@types/metro-core" "*"
+    "@types/metro-file-map" "*"
+    "@types/metro-resolver" "*"
     "@types/metro-source-map" "*"
     "@types/metro-transform-worker" "*"
+    "@types/ws" "*"
+    "@types/yargs" "*"
 
 "@types/micromatch@^4.0.2":
   version "4.0.2"
@@ -4315,7 +4327,7 @@
   resolved "https://registry.yarnpkg.com/@types/wrap-ansi/-/wrap-ansi-8.0.1.tgz#59dc91b83a2e949971da8617592d9eaaf6592774"
   integrity sha512-cjwgM6WWy9YakrQ36Pq0vg5XoNblVEaNq+/pHngKl4GyyDIxTeskPoG+tp4LsRk0lHrA4LaLJqlvYridi7mzlw==
 
-"@types/ws@^8.0.0", "@types/ws@^8.5.3":
+"@types/ws@*", "@types/ws@^8.0.0", "@types/ws@^8.5.3":
   version "8.5.4"
   resolved "https://registry.yarnpkg.com/@types/ws/-/ws-8.5.4.tgz#bb10e36116d6e570dd943735f86c933c1587b8a5"
   integrity sha512-zdQDHKUgcX/zBc4GrwsE/7dVdAD8JR4EuiAXiiUhhfyIJXXb2+PrGshFyeXWQPMmmZ2XxgaqclgpIC7eTXc1mg==
@@ -4333,6 +4345,13 @@
   version "21.0.0"
   resolved "https://registry.yarnpkg.com/@types/yargs-parser/-/yargs-parser-21.0.0.tgz#0c60e537fa790f5f9472ed2776c2b71ec117351b"
   integrity sha512-iO9ZQHkZxHn4mSakYV0vFHAVDyEOIJQrV2uZ06HxEPcx+mt8swXoZHIbaaJ2crJYFfErySgktuTZ3BeLz+XmFA==
+
+"@types/yargs@*", "@types/yargs@^17.0.8":
+  version "17.0.22"
+  resolved "https://registry.yarnpkg.com/@types/yargs/-/yargs-17.0.22.tgz#7dd37697691b5f17d020f3c63e7a45971ff71e9a"
+  integrity sha512-pet5WJ9U8yPVRhkwuEIp5ktAeAqRZOq4UdAyWLWzxbtpyXnzbtLdKiXAjJzi/KLmPGS9wk86lUFWZFN6sISo4g==
+  dependencies:
+    "@types/yargs-parser" "*"
 
 "@types/yargs@^13.0.0":
   version "13.0.12"
@@ -4352,13 +4371,6 @@
   version "16.0.4"
   resolved "https://registry.yarnpkg.com/@types/yargs/-/yargs-16.0.4.tgz#26aad98dd2c2a38e421086ea9ad42b9e51642977"
   integrity sha512-T8Yc9wt/5LbJyCaLiHPReJa0kApcIgJ7Bn735GjItUfh08Z1pJvu8QZqb9s+mMvKV6WUQRV7K2R46YbjMXTTJw==
-  dependencies:
-    "@types/yargs-parser" "*"
-
-"@types/yargs@^17.0.8":
-  version "17.0.13"
-  resolved "https://registry.yarnpkg.com/@types/yargs/-/yargs-17.0.13.tgz#34cced675ca1b1d51fcf4d34c3c6f0fa142a5c76"
-  integrity sha512-9sWaruZk2JGxIQU+IhI1fhPYRcQ0UuTNuKuCW9bR5fp7qi2Llf7WDzNa17Cy7TKnh3cdxDOiyTu6gaLS0eDatg==
   dependencies:
     "@types/yargs-parser" "*"
 
